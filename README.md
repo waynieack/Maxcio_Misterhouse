@@ -3,15 +3,14 @@ Maxcio Wifi swich Misterhouse Sketch
 
 This sketch can be used on the ESP8266 based Maxcio smart wifi switch. 
 
-Build Notes:
+### Build Notes:
 
-http://www.hagensieker.com/blog/page/?post_id=44&title=esp8266-hack-of-inexpensive-wifi-outlet
+  http://www.hagensieker.com/blog/page/?post_id=44&title=esp8266-hack-of-inexpensive-wifi-outlet
 
-Tools menu:
+   ### Tools menu:
 
-Flash Size = 1M (128k SPIFFS)
-
-IwIP Variant = 1.4 Prebuilt
+   - Flash Size = 1M (128k SPIFFS)
+   - IwIP Variant = 1.4 Prebuilt
 
 
 
