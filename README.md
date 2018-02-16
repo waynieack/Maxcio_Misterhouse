@@ -1,7 +1,9 @@
 # Maxcio_Misterhouse
 Maxcio Wifi swich Misterhouse Sketch
 
-This sketch can be used on the ESP8266 based Maxcio smart wifi switch. 
+This sketch can be used on the ESP8266 based Maxcio smart wifi switch and others. 
+
+You can compile yourself, the link below is a good step by step guide excluding the soldering and of course use the sketch in this repo or you can use the pre-compiled bin. 
 
 ### Build Notes:
 
