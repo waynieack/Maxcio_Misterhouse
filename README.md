@@ -8,7 +8,9 @@ Build Notes:
 http://www.hagensieker.com/blog/page/?post_id=44&title=esp8266-hack-of-inexpensive-wifi-outlet
 
 Tools menu:
+
 Flash Size = 1M (128k SPIFFS)
+
 IwIP Variant = 1.4 Prebuilt
 
 
@@ -17,7 +19,7 @@ IwIP Variant = 1.4 Prebuilt
 Sample switch Homie config:
 Note: base_topic and device_id must match MH user code
 
-
+```
 {
   "name": "OfficeCloset",
   "device_id": "officecloset",
@@ -37,24 +39,27 @@ Note: base_topic and device_id must match MH user code
     "percentage": 55
   }
 }
-
+```
 
 Install MQTT broker (can be on any machine):
+```
 apt-get install mosquitto mosquitto-clients
+```
 
 Install Misterhouse MQTT client requirements:
+```
 cpan install Net::MQTT::Constants
-
+```
 
 
 Test from CLI (once the switch is connected):
-
+```
 mosquitto_pub -d -h 127.0.0.1 -q 0 -t homie/officecloset/switch/on/set -m "on"
-
+```
 
 
 Misterhouse code:
-
+```
 #noloop=start
 require mqtt;
 
@@ -63,5 +68,6 @@ $Office_Closet_Light = new mqtt_Item($mqttSubscribe, "homie/officecloset/switch/
 $Office_Closet_Light ->set_states("on","off");
 
 #noloop=stop
+```
 
 
