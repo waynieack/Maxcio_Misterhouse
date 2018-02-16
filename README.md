@@ -18,6 +18,7 @@ You can compile yourself, the link below is a good step by step guide excluding 
 
 
 Sample switch Homie config:
+
 Note: base_topic and device_id must match MH user code
 
 ```
